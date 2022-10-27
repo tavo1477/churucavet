@@ -1,0 +1,135 @@
+/*=============================================
+CONTACTO
+=============================================*/
+
+.contacto-app{
+
+    .contacto-main{
+
+        display        : flex;
+        flex-direction : column;
+
+        @include from(lg){
+
+             flex-direction: row;
+
+        }
+
+        .contacto-horario{
+            
+            padding    : 2rem;
+
+
+            @include from(lg){
+
+                flex : 1 0 50%;
+
+            }
+
+            &__title{
+
+                font-size : var(--h3-font-size);
+                color     : #4F4A45; 
+
+                @include from(lg){
+
+                    font-size : var(--h3--font-size);
+
+                }
+
+            }
+
+            .contacto-info{
+
+                display         : flex;
+                flex-wrap       : wrap;
+                justify-content : space-between;
+                margin-bottom   : 1.5rem;
+                width           : 100%;
+
+                &__item{
+
+                    width       : 100%;
+                    color       : #4F4A45;
+                   
+                    @include from(lg){
+
+                        width  : calc(33.33% - 1rem);
+                        margin : .5rem;
+
+                    }
+
+                    i{
+
+                        margin-bottom : 2rem;
+                        font-size     : 30px;
+
+                    }
+
+                    &--desc{
+
+                        font-size   : var(--body-font-size);
+                        font-family : $font-title;
+                        margin      : 0;
+                        padding-bottom : .5rem;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .contacto-formulario{
+
+            padding : 2rem;
+            background :#fff;
+
+            @include from(lg){
+
+                flex : 1 0 50%;
+
+            }
+
+            &__title{
+
+                 font-size   : var(--h3-font-size);
+                 font-family : $font-title;
+            }
+
+            input, select, textarea{
+
+                width         : 100%;
+                margin-bottom : 1.8rem;
+                color         : #8b8b8b;               
+                background    : #f7f5f0;
+                padding       : 1.6em 1.4em;
+                border        : 1px solid #ddd;
+                font-family   : $font-main;
+                line-height   : 1.2em;
+                border-radius : 0.625rem;
+
+                &:hover{
+
+                    color        : #1d1d1d;
+                    border-color : #daad86;
+                    background   : #f7f5f0;                  
+
+                }
+
+                &:focus{
+
+                    outline: none;
+
+                }
+
+                
+
+
+            }           
+
+        }
+
+    }
+
+}
