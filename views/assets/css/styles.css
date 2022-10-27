@@ -1466,6 +1466,112 @@ PORQUÉ ESCOGERNOS
 }
 
 /*=============================================
+CONTACTO
+=============================================*/
+.contacto-app .contacto-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 64em) {
+  .contacto-app .contacto-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.contacto-app .contacto-main .contacto-horario {
+  padding: 2rem;
+}
+@media screen and (min-width: 64em) {
+  .contacto-app .contacto-main .contacto-horario {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+.contacto-app .contacto-main .contacto-horario__title {
+  font-size: var(--h3-font-size);
+  color: #4F4A45;
+}
+@media screen and (min-width: 64em) {
+  .contacto-app .contacto-main .contacto-horario__title {
+    font-size: var(--h3--font-size);
+  }
+}
+.contacto-app .contacto-main .contacto-horario .contacto-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.contacto-app .contacto-main .contacto-horario .contacto-info__item {
+  width: 100%;
+  color: #4F4A45;
+}
+@media screen and (min-width: 64em) {
+  .contacto-app .contacto-main .contacto-horario .contacto-info__item {
+    width: calc(33.33% - 1rem);
+    margin: 0.5rem;
+  }
+}
+.contacto-app .contacto-main .contacto-horario .contacto-info__item i {
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+.contacto-app .contacto-main .contacto-horario .contacto-info__item--desc {
+  font-size: var(--body-font-size);
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+.contacto-app .contacto-main .contacto-formulario {
+  padding: 2rem;
+  background: #fff;
+}
+@media screen and (min-width: 64em) {
+  .contacto-app .contacto-main .contacto-formulario {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+.contacto-app .contacto-main .contacto-formulario__title {
+  font-size: var(--h3-font-size);
+  font-family: "Roboto Slab", serif;
+}
+.contacto-app .contacto-main .contacto-formulario input, .contacto-app .contacto-main .contacto-formulario select, .contacto-app .contacto-main .contacto-formulario textarea {
+  width: 100%;
+  margin-bottom: 1.8rem;
+  color: #8b8b8b;
+  background: #f7f5f0;
+  padding: 1.6em 1.4em;
+  border: 1px solid #ddd;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.2em;
+  border-radius: 0.625rem;
+}
+.contacto-app .contacto-main .contacto-formulario input:hover, .contacto-app .contacto-main .contacto-formulario select:hover, .contacto-app .contacto-main .contacto-formulario textarea:hover {
+  color: #1d1d1d;
+  border-color: #daad86;
+  background: #f7f5f0;
+}
+.contacto-app .contacto-main .contacto-formulario input:focus, .contacto-app .contacto-main .contacto-formulario select:focus, .contacto-app .contacto-main .contacto-formulario textarea:focus {
+  outline: none;
+}
+
+/*=============================================
 FOOTER
 =============================================*/
 .main-footer {
