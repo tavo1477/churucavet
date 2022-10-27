@@ -1,0 +1,124 @@
+#slide{
+
+	position : relative;
+	margin   : auto;
+	width    : 100%;	
+	overflow : hidden;
+
+}
+
+#slide ul{
+
+	position : relative;
+	left     : 0%;
+	margin   : auto;
+	height   : auto;
+	width    : 400%;
+	clear    : both;
+	display  : table;
+	margin   : 0px;
+	padding  : 0px;
+
+}
+
+#slide ul li{
+
+	position : relative;
+	float    : left;
+	width    : 25%;
+	margin   : 0px;
+	padding  : 0px;
+
+}	
+
+#slide ul li img{
+
+	width : 100%;	
+
+}
+
+#slide .flechas{
+
+	position         : absolute;
+	font-size        : 20px;
+	color            : white;
+	cursor        	 : pointer;
+	z-index       	 : 2;
+	border        	 : 2px solid #fff;
+	border-radius 	 : 50%;
+	width         	 : 50px;
+	height         	 : 50px;
+	display          : flex;
+	justify-content  : center;
+	align-items      : center;
+
+	&:hover{
+
+		background : $primary-color;
+		color      : #fff;
+		border     : none;    
+
+	}
+
+}
+
+#slide #retroceder{
+
+	top  : 45%;
+	left : 2%;
+
+}
+
+#slide #avanzar{
+
+	top   : 45%;
+	right : 2%;
+
+}
+
+#slide ul li .textoSlide{
+
+	position     : absolute;
+	width        : 100%;
+	top          : 30%;
+	left         : 0;
+	text-align   : left;
+	z-index      : 1;
+	color        : white;
+	
+	@include from(lg){
+
+		top          : 30%;		
+		padding-left : 7rem;
+
+	}
+
+}
+
+#slide ul li .textoSlide h4{
+	
+	padding        : 5px 0;
+	font-size      : 1.125rem;
+	font-family    : $font-title;
+	text-align     : left;
+	color          : $subtitle-color; 	
+	margin         : 0;
+
+}
+
+#slide ul li .textoSlide h1{
+	
+	padding     : 5px 0;
+	font-size   : 2.375rem;
+	font-family : $font-title;
+	margin      : 0;
+	width       : 80%;
+
+	@include from(lg){
+		
+		font-size : 3.5rem;
+		width     : 70%;
+	}
+
+}
+

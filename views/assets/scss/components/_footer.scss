@@ -1,0 +1,109 @@
+/*=============================================
+FOOTER
+=============================================*/
+
+.main-footer{
+
+	background  : #2C2A29;
+	color       : #fff;
+
+
+	&__block{
+
+		flex-wrap       : wrap;
+		justify-content : space-between;	
+		width           : 100%;
+		padding-top     : 2rem; 
+		padding-bottom  : 2rem;		
+
+		img{
+
+			width: 45%;	
+
+		}
+
+		.footer-item{
+
+			margin-bottom : 1.5rem;				
+			width         : 100%;
+
+			@include from(lg){
+
+				width  : calc(33.33% - 1rem);
+				margin : .5rem;
+
+			}
+
+			&__title{
+
+				font-size   : var(--body-font-size );
+				font-family : $font-title;
+				color       : $primary-color;
+
+			}			
+
+			.footer-correo, .footer-phone, .footer-dir, &__text{
+
+				font-size   : var(--small--font-size);
+				font-family : $font-main;
+
+				i{
+
+					margin-right   : .3rem;
+					padding-bottom : 1rem;
+					color          : $primary-color;
+
+				}
+
+			}
+
+			.footer-redes{
+
+				padding-top  : 1rem;
+
+				a{
+
+					margin-right : .5rem;				
+
+					i{
+
+						background 		: $primary-color;
+						color      		: #fff;
+						width      		: 20px;
+						height     		: 20px;
+						border-radius   : 50%;
+						font-size  		: var(--small-font-size);
+						display    		: flex;
+						float      		: left;
+						justify-content : center;
+						align-items     : center;
+						margin-left     : .5rem;	
+						padding         : .8rem;					
+
+					}
+
+				}
+
+			}
+
+		}
+		
+	}
+
+}
+
+/*=============================================
+SEGUNDO FOOTER
+=============================================*/
+
+.second-footer{
+
+	background  : #393736;
+	color       : #fff;
+	font-size   :  var(--small-font-size);
+	font-family : $font-main;
+	font-weight : 500;
+	padding     : .5rem;
+
+
+}

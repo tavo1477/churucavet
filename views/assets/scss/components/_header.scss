@@ -1,0 +1,176 @@
+/*=============================================
+TOP
+=============================================*/
+
+.top {
+
+	background      : #fff;	
+	padding-top     : 1rem;	
+	justify-content : space-around;
+	border-bottom   : 1px solid rgba(#c0bebd, .5);
+
+	.top-title{
+
+		color: #524d48;
+	}
+
+	.top-called{
+
+		font-size: var(--small-font-size );
+
+		.text-color {
+
+			color : $primary-color;
+
+		}
+
+	}
+
+	.top-visited{
+
+		font-size: var(--small-font-size );
+
+		.text-color {
+
+			color : #c0bebd;
+
+		}
+		
+	}
+
+	.top-redesSociales{
+		
+
+		a{
+			
+			margin-left: .5rem;
+
+			i{
+
+				background 		: $secondary-color;
+				color      		: #fff;
+				width      		: 20px;
+				height     		: 20px;
+				border-radius   : 50%;
+				font-size  		: 10px;
+				display    		: flex;
+				float      		: left;
+				justify-content : center;
+				align-items     : center;
+				margin-left     : .5rem;
+
+				&:hover {
+				
+					background: $primary-color;;
+
+				}	
+				
+			}
+
+		}
+
+	}
+
+}
+
+/*=============================================
+HEADER
+=============================================*/
+
+.main-header{
+
+	background     :  #fff;
+	width          : 100%;
+	padding-top    : .5rem;
+	padding-bottom : .5rem;
+
+	&__block{
+
+		justify-content : space-between;
+		align-items     : center;
+        height          : 100%;
+        flex-wrap       : wrap;
+
+        img{
+
+        	width: 40%;
+
+        }
+
+        .main-nav{
+
+        	position    : fixed;
+            height      : calc(100vh - #{$header-height});
+            width       : 100vw;
+            background  : #fff;
+            top         : 100px;
+            right       : -100vw;
+            transition  : right .3s;
+            z-index     : var(--z-fixed);
+
+            @include from(lg){
+
+                position   : static;
+                background : transparent;
+                padding    : 0;
+                height     : auto;
+                width      : auto;
+                margin-top : 1rem; 
+
+            }
+
+            &.show{
+
+                right: 0;
+
+           }
+
+           .main-menu{
+
+                margin-top    : 0;
+                margin-bottom : 0;
+                padding-left  : 1rem;
+                
+                @include from(lg){
+                    
+                    display       : flex;
+                    padding-left  : 0;
+
+                }
+
+                &__item{
+
+                    padding    : .8rem;
+                    font-size  : 1.375rem;
+                    text-align : left;
+
+                    @include from(lg){
+
+                        font-size : 15px;
+
+                    }
+
+                }
+
+                &__link{
+
+                    color          : #524d48;
+                    font-family    : $font-main; 
+                    text-transform : uppercase;
+
+                    &:hover{
+
+                        color       : $primary-color;
+                        font-weight : bold; 
+
+                    }                   
+
+                }
+
+           }
+
+		}
+
+	}
+
+}

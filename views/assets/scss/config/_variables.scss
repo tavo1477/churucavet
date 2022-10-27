@@ -1,0 +1,56 @@
+$max-width: 1200px;
+$header-height : 5rem;
+
+// Paleta de colores
+
+$primary-color   : #009C89;
+$secondary-color : #2E2C61;
+$subtitle-color  : #6F4E2C;
+
+// Fuentes
+    // Roboto Slab para los títulos
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+    $font-title : 'Roboto Slab', serif;
+
+    // Raleway para el texto
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+    $font-main : 'Raleway', sans-serif;
+
+// Breakpoints
+
+$breakpoints : (
+    sm : 30em,  //480px
+    md :  48em, //768px
+    lg : 64em,  //1024px
+    xl : 75em,  //1200px
+);
+
+:root {
+
+	--h1-font-size    : 3rem;    //48px
+    --h2-font-size    : 2.3rem;  //36.8px
+    --h3-font-size    : 1.75rem; //1.75px
+    --body-font-size  : .9rem;   //14.4px
+    --small-font-size : .75rem;  //12px
+ 
+	@include from(lg){
+
+		--h1--font-size    : 3.125rem;   //50px
+		--h2--font-size    : 2.8125rem;  //45px
+		--h3--font-size    : 2.1875rem;  //35px
+		--body--font-size  : 1rem;       //16px
+		--small--font-size : .8rem;      //12.8px
+
+	}
+
+}
+
+// Variables de apilamiento(z-index)
+
+:root{
+    --z-back    : -10;
+    --z-normal  : 1;
+    --z-tooltip : 10;
+    --z-fixed   : 100;
+    --z-modal   : 1000;
+}

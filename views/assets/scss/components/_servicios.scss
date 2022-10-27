@@ -1,0 +1,422 @@
+/*=============================================
+SERVICIOS
+=============================================*/
+
+.servicios{
+
+	background : #fff;
+	padding-top : 2rem;
+	padding-bottom : 2rem;
+
+	&-title{
+
+		font-size   : var(--h2--font-size);
+		font-family : $font-title;
+		color       : #524d48;
+	}
+
+	&-container{
+
+		flex-wrap  : wrap;
+		text-align : center;	 
+		width      : 100%;
+
+		.servicios-item{
+
+			margin-bottom : 1.5rem;		
+			padding       : 2rem;
+			width         : 100%;
+
+			&__img{
+
+				background : $primary-color;
+				overflow   : hidden;
+				position   : relative;
+				border-radius : 7px;				
+
+				img{
+
+					display    : block;				
+					transition : all .3s ease-out;
+
+
+					&:hover{
+
+						transform  : scale(1.1) translateY(-10px);
+						opacity: .5;
+						
+					}
+				}
+
+				.descripcion-image{
+
+					position   : absolute;
+					top        : 50%;
+					left       : 50%;
+					transform  : translate(-50%, -50%);
+					text-align : center;
+					color      : #fff;
+					font-weight: bold;
+					font-size  : var(--h3-font-size );
+					opacity    : 0;
+					border     : 3px solid #fff;
+					border-radius : 50%;
+					padding    : 20px;
+
+				}
+
+			}
+
+			@include from(lg){
+
+				width  : calc(33.33% - 1rem);
+				margin : .5rem;
+
+			}
+
+			&__title{
+
+				font-size   : 18px;
+				font-family : $font-title;
+				color       : #524d48;
+				margin      : 0;
+				padding-top : 1rem;
+
+				&:hover{
+
+					color : #6F4E2C;
+
+				}
+
+			}	
+
+			&__description{
+
+				font-size   : var(--body-font-size);
+				font-family : $font-main;
+				padding-top : 1rem;
+				line-height : 1.4;
+
+			}
+
+		}
+
+	}
+
+}
+
+.servicios-item__img:hover .descripcion-image{
+
+	opacity: 1;	
+
+}
+
+/*=============================================
+INFO SERVICIOS
+=============================================*/
+
+.infoservicios-app{
+
+	.infoservicios-main{
+
+		flex-direction : column;
+
+		@include from(lg){
+
+			flex-direction : row;
+
+		}
+
+		.infoservices-aside{
+
+			padding : 2rem;
+
+			@include from(lg){
+
+				flex : 1 0 30%;
+
+			}
+
+			&__title{
+
+				font-size   : var(--h3-font-size );
+				font-family : $font-title;
+				margin      : 0;
+
+			}
+
+			.infoservices-list{
+
+				margin      : 0;
+				padding     : 0;
+				padding-top : 1rem;
+
+				&__item{
+
+					margin-bottom : 1rem;
+
+					a{
+
+						color       : #524d48;
+						font-family : $font-title;
+
+						&:hover{
+
+							color : $primary-color;
+
+						}
+
+
+					}
+
+				}
+
+			}
+
+			.infoservices-promocion{
+
+				margin-top : 1.5rem;
+
+				img{
+
+					border-radius : 7px;
+
+				}
+
+			}
+
+		}
+
+		.infoservices-descripcion{
+
+			padding-left   : 4rem;
+			padding-bottom : 2rem;
+			
+
+			@include from(lg){
+
+				flex : 1 0 70%;
+
+			}
+
+			&__img{
+
+				color         : #fff;
+				width         : 100%;
+				position      : relative;
+				overflow      : hidden;
+				background    : #000;	
+				text-align    : left;
+				border-radius : 7px;
+
+				img{
+
+					max-width  : 100%;
+					opacity    : 1;
+				    width      : 100%;
+				    height     : 300px;				
+					transition : opacity 0.35s;	
+					object-fit : cover;
+
+
+					figcaption{
+
+						position : absolute;
+						bottom   : 0;
+						left     : 0;
+						padding  : 30px 3em;
+						width    : 100%;
+						height   : 100%;						
+						
+					}				
+
+				}
+
+			}
+
+		&__info{
+
+			padding-top : 2rem;
+ 			font-family : $font-main;
+
+
+			.infoservices-types-title{
+
+					font-family : $font-title;
+					padding-top : 1rem;
+
+			}
+
+ 				.types-list{
+
+					&__item{
+
+ 						display: flex;
+ 						margin-top : 1rem;
+
+ 						i{
+
+							margin-right : .7rem;
+
+						}
+
+
+
+					}
+
+				}
+
+ 		}
+
+			.infoservices-container{
+
+				.infoServicioscontent{
+
+					border     : 4px solid #fefefe;
+					box-shadow : 0 0 0 1px hsl(0deg 0% 4% / 20%);
+					padding    : 1rem;
+					margin-top : 1rem;
+					border-radius : 7px;
+
+					&:hover{
+
+						box-shadow: 0 0 6px 1px rgb(111 187 177 / 50%);
+						transition : box-shadow .2s ease-out;
+					}
+					
+
+					.infoServicioscontent-num{
+
+						font-size   : 10rem;
+						margin      : 0;
+						color       : rgba(#6FBBB1, .2);
+						font-family : $font-title;
+
+
+					}
+
+					.infoServicioscontent-title{
+
+						font-size   :  var(--h3-font-size);
+						color       : #524d48;
+						font-family : $font-title;
+						margin      : 0;
+
+					}
+
+					.infoServicioscontent-text{
+
+						font-size   : var(--body-font-size);
+						font-family : $font-main;
+						padding-top : 1rem;
+						line-height : 1.4;
+
+					}
+
+					.infoServicioscontent-list{
+
+						font-family : $font-main;;
+
+						&__item{
+
+							margin-bottom : 1rem;
+
+						}
+
+					}
+
+				}
+
+ 			}
+
+ 		}
+
+ 	}
+
+ }
+
+.infoservices-descripcion__img figcaption{
+
+	  position : absolute;
+	  bottom   : 0;
+	  left     : 0;
+	  padding  : 100px 3em;
+	  width    : 100%;
+	  height   : 100%;
+
+}
+
+.infoservices-descripcion__img figcaption::before{
+
+	position         : absolute;
+	top              : 30px;
+	right            : 30px;
+	bottom           : 30px;
+	left             : 100%;
+	border-left      : 4px solid rgba(255, 255, 255, 0.8);
+	content          : '';
+	opacity          : 0;
+	background       : rgba(0, 156, 137, 0.5);	
+	transition       : all 0.5s;	
+	transition-delay : 0.6s;
+
+}
+
+.infoservices-descripcion .descripcion__img, .descripcion_icon{
+
+	 margin     : 0 0 5px;
+     opacity    : 0;
+     transition : opacity 0.35s,transform 0.35s;
+
+}
+
+.infoservices-descripcion .descripcion__img{
+
+	word-spacing     : -0.15em;
+    font-size        : var(--h3-font-size );
+    font-family      : $font-title;
+    text-transform   : uppercase;  
+    transition-delay : 0.3s;
+
+ }
+
+ .infoservices-descripcion .descripcion_icon{
+
+ 	font-size        : var(--h3-font-size );	
+    transform        : translate3d(0%, 30%, 0);  
+    transition-delay : 0s;
+
+ }
+
+
+
+ .infoservices-descripcion .infoservices-descripcion__img:hover img{
+
+ 	opacity : 0.3;
+
+ }
+
+ .infoservices-descripcion .infoservices-descripcion__img:hover figcaption .descripcion_icon{
+
+ 	opacity          : 0.9;  
+    transform        : translate3d(0%, 0%, 0);  
+    transition-delay : 0.6s;
+
+ }
+
+  .infoservices-descripcion .infoservices-descripcion__img:hover figcaption .descripcion__img{
+
+ 	opacity          : 1; 
+    transform        : translate3d(0%, 0%, 0);
+    transition-delay : 0.4s;
+
+ }
+
+  .infoservices-descripcion:hover figcaption::before{
+
+  	background       : rgba(255, 255, 255, 0);
+    left             : 30px;
+    opacity          : 1; 
+    transition-delay : 0s;
+
+  }

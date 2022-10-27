@@ -1,0 +1,113 @@
+/*=============================================
+CLIENTES
+=============================================*/
+
+.clientes-app{	
+
+	.clientes-main{
+
+		flex-direction : column;
+
+		@include from(lg){
+
+			flex-direction : row;
+
+		}
+
+		.images-aside{
+
+			@include from(lg){
+
+				flex : 1 0 50%;
+
+			}
+
+		}
+
+		.clientes-desc{
+
+			display         : flex;
+			flex-direction  : column;
+			justify-content : center;		
+			align-items     : center;
+			text-align      : center;
+			padding         : 2rem; 
+ 
+			@include from(lg){
+
+				flex : 1 0 50%;
+
+			}
+
+			&__title{
+
+				font-size   : var(--h2--font-size);
+				font-family : $font-title;
+				margin      : 0;
+
+			}
+
+			&__text{
+
+				font-size   : var(--body-font-size);
+				font-family : $font-main;
+				padding     : 1rem;
+
+			}
+
+			.clientes-satisfechos{
+
+				flex-wrap  : wrap;
+				text-align : center;	 
+				width      : 100%;
+
+				.clientes-item{
+
+					margin-bottom : 1rem;		
+					padding       : 1rem;
+					width         : calc(50% - 1rem);
+
+					@include from(lg){
+
+						width  : calc(33.33% - 1rem);
+						margin : .5rem;
+
+					}
+
+					.clientes-num{
+
+						font-size   : var(--h2-font-size);
+						font-family : $font-title;
+						color       : $primary-color;
+						margin      : 0;
+						font-weight : normal;
+
+						@include from(lg){
+
+							font-size : var(--h2--font-size);
+
+						}
+
+					}
+
+					.clientes-text{
+
+						font-size   : var(--body-font-size);
+						font-family : $font-main;
+						font-weight : normal;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+
