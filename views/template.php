@@ -29,6 +29,8 @@ $route = ControllerRoute::ctrRoute();
 
 	<link rel="stylesheet" href="<?php echo $route ?>views/assets/css/plugins/jquery.fancybox.min.css">
 
+	<link rel="stylesheet" href="<?php echo $route ?>views/assets/css/plugins/notie.min.css">
+
 	<!--=====================================
 	PLUGINS DE JS
 	======================================-->
@@ -36,10 +38,22 @@ $route = ControllerRoute::ctrRoute();
    	<script async src="<?php echo $route ?>views/js/plugins/jquery.min.js"></script>  
 
    	<script async src="<?php echo $route ?>views/js/plugins/jquery.fancybox.min.js"></script>
+
+   	<script async src="<?php echo $route ?>views/js/plugins/notie.min.js"></script>
+
+   	<script src='https://www.google.com/recaptcha/api.js?render=6LcLMcAiAAAAAN3_UPBD2Kok7kNjkQqR-FZMXwyF'> 
+	</script>
+	
+	<script>
+	    grecaptcha.ready(function() {
+	    grecaptcha.execute('6LcLMcAiAAAAAN3_UPBD2Kok7kNjkQqR-FZMXwyF', {action: 'formulario'})
+	    .then(function(token) {
+	    var recaptchaResponse = document.getElementById('recaptchaResponse');
+	    recaptchaResponse.value = token;
+	    });});
+	</script>
    	
-   	<!--https://docs.muuri.dev/getting-started.html -->
-   	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>  
+  </head> 
 
 <body>
 
