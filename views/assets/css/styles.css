@@ -1487,6 +1487,20 @@ CONTACTO
 }
 .contacto-app .contacto-main .contacto-horario {
   padding: 2rem;
+  background: #009C89;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 64em) {
   .contacto-app .contacto-main .contacto-horario {
@@ -1497,12 +1511,8 @@ CONTACTO
 }
 .contacto-app .contacto-main .contacto-horario__title {
   font-size: var(--h3-font-size);
-  color: #4F4A45;
-}
-@media screen and (min-width: 64em) {
-  .contacto-app .contacto-main .contacto-horario__title {
-    font-size: var(--h3--font-size);
-  }
+  color: #fff;
+  font-family: "Roboto Slab", serif;
 }
 .contacto-app .contacto-main .contacto-horario .contacto-info {
   display: -webkit-box;
@@ -1518,7 +1528,7 @@ CONTACTO
 }
 .contacto-app .contacto-main .contacto-horario .contacto-info__item {
   width: 100%;
-  color: #4F4A45;
+  color: #fff;
 }
 @media screen and (min-width: 64em) {
   .contacto-app .contacto-main .contacto-horario .contacto-info__item {
@@ -1534,7 +1544,57 @@ CONTACTO
   font-size: var(--body-font-size);
   font-family: "Roboto Slab", serif;
   margin: 0;
-  padding-bottom: 0.5rem;
+}
+.contacto-app .contacto-main .contacto-horario .horario-atencion__title {
+  font-size: var(--h3-font-size);
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  padding-top: 4rem;
+}
+.contacto-app .contacto-main .contacto-horario .horario-atencion__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contacto-app .contacto-main .contacto-horario .horario-atencion__block--item {
+  font-size: var(--body-font-size);
+  margin-right: 20px;
+}
+.contacto-app .contacto-main .contacto-horario .horario-atencion__block--item i {
+  margin-right: 10px;
+}
+.contacto-app .contacto-main .contacto-horario .redes-sociales__title {
+  font-size: var(--h3-font-size);
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  padding-top: 7rem;
+}
+.contacto-app .contacto-main .contacto-horario .redes-sociales__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+}
+.contacto-app .contacto-main .contacto-horario .redes-sociales__block--item {
+  margin-right: 20px;
+}
+.contacto-app .contacto-main .contacto-horario .redes-sociales__block--item i {
+  margin-right: 10px;
+}
+.contacto-app .contacto-main .contacto-horario .redes-sociales__block--item a {
+  color: #fff;
+}
+.contacto-app .contacto-main .contacto-horario .redes-sociales__block--item a:hover {
+  color: #2E2C61;
 }
 .contacto-app .contacto-main .contacto-formulario {
   padding: 2rem;
