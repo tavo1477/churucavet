@@ -40,6 +40,13 @@ VETERINARIOS
 		padding       : 2rem;
 		width         : 100%;
 
+		img{
+
+			width: 55%;
+			border-radius : 7px;
+
+		}
+
 		@include from(lg){
 
 			width  : calc(50% - 1rem);
