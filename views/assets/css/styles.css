@@ -1048,6 +1048,10 @@ VETERINARIOS
   padding: 2rem;
   width: 100%;
 }
+.veterinarios-container .veterinarios-item img {
+  width: 55%;
+  border-radius: 7px;
+}
 @media screen and (min-width: 64em) {
   .veterinarios-container .veterinarios-item {
     width: calc(50% - 1rem);
