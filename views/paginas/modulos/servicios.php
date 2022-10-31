@@ -37,7 +37,7 @@
 
             <div class="servicios-item__img">
                 
-                <img src="<?php echo $route ?>views/images/servicios/consulta-medica.jpg" alt="Consulta médica">
+                <img src="<?php echo $route ?>views/images/servicios/vacunacion.jpg" alt="Vacunación">
 
                 <div class="descripcion-image">
 
@@ -61,7 +61,7 @@
 
             <div class="servicios-item__img">
                 
-                <img src="<?php echo $route ?>views/images/servicios/consulta-medica.jpg" alt="Consulta médica">
+                <img src="<?php echo $route ?>views/images/servicios/odontologia.jpg" alt="Odontología">
 
                 <div class="descripcion-image">
 
