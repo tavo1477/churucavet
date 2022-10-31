@@ -5,7 +5,7 @@
  <section class="veterinarios l-section">
      
     <h3 class="veterinarios-subtitle center-content">Especialistas</h3>
-    <h2 class="veterinarios-title center-content">Nuestros doctores</h2>
+    <h2 class="veterinarios-title center-content">Nuestros equipo</h2>
 
     <div class="veterinarios-container l-container">
 
@@ -31,7 +31,7 @@
 
         <div class="veterinarios-item">
 
-            <i class="fa-regular fa-user"></i>
+            <img src="<?php echo $route ?>views/images/groomista.jpg" alt="">
 
             <div class="veterinarios-item__info" style="margin-top : .8rem;">
                 
