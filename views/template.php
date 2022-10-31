@@ -31,6 +31,9 @@ $route = ControllerRoute::ctrRoute();
 
 	<link rel="stylesheet" href="<?php echo $route ?>views/assets/css/plugins/notie.min.css">
 
+	<!-- https://animate.style -->
+	<link rel="stylesheet" href="<?php echo $route ?>views/assets/css/plugins/animate.css"  />
+
 	<!--=====================================
 	PLUGINS DE JS
 	======================================-->
@@ -41,18 +44,12 @@ $route = ControllerRoute::ctrRoute();
 
    	<script async src="<?php echo $route ?>views/js/plugins/notie.min.js"></script>
 
-   	<script src='https://www.google.com/recaptcha/api.js?render=6LcLMcAiAAAAAN3_UPBD2Kok7kNjkQqR-FZMXwyF'> 
-	</script>
-	
-	<script>
-	    grecaptcha.ready(function() {
-	    grecaptcha.execute('6LcLMcAiAAAAAN3_UPBD2Kok7kNjkQqR-FZMXwyF', {action: 'formulario'})
-	    .then(function(token) {
-	    var recaptchaResponse = document.getElementById('recaptchaResponse');
-	    recaptchaResponse.value = token;
-	    });});
-	</script>
-   	
+   	<script async src="<?php echo $route ?>views/js/plugins/wow.min.js"></script>
+
+   	 <script>
+      new WOW().init();
+      </script>  
+
   </head> 
 
 <body>
