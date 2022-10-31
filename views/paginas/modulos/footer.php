@@ -66,7 +66,7 @@ FOOTER
         <div class="footer-item">
 
            <h3 class="footer-item__title">Acerca de la clínica</h3>
-           <p class="footer-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus accusantium perferendis facere, libero sunt ab.</p>
+           <p class="footer-item__text">En ChurucaVet Clinica Veterinaria, encontrarás un equipo de trabajo dedicado y comprometido en responder a la necesidad de tu mascota. Buscamos el bienestar animal, de tu familia y la comunidad; por eso con excelencia brindamos el mejor servicio posible.</p>
 
         </div>
 
