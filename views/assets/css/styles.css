@@ -268,6 +268,8 @@ HEADER
 
 #slide ul li img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #slide .flechas {
