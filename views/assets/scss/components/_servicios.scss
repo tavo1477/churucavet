@@ -364,7 +364,7 @@ INFO SERVICIOS
 
 .infoservices-descripcion .descripcion__img, .descripcion_icon{
 
-	 margin     : 0 0 5px;
+	   margin     : 0 0 5px;
      opacity    : 0;
      transition : opacity 0.35s,transform 0.35s;
 
@@ -372,7 +372,7 @@ INFO SERVICIOS
 
 .infoservices-descripcion .descripcion__img{
 
-	word-spacing     : -0.15em;
+	  word-spacing     : -0.15em;
     font-size        : var(--h3-font-size );
     font-family      : $font-title;
     text-transform   : uppercase;  
@@ -382,7 +382,7 @@ INFO SERVICIOS
 
  .infoservices-descripcion .descripcion_icon{
 
- 	font-size        : var(--h3-font-size );	
+ 	  font-size        : var(--h3-font-size );	
     transform        : translate3d(0%, 30%, 0);  
     transition-delay : 0s;
 
@@ -398,7 +398,7 @@ INFO SERVICIOS
 
  .infoservices-descripcion .infoservices-descripcion__img:hover figcaption .descripcion_icon{
 
- 	opacity          : 0.9;  
+ 	  opacity          : 0.9;  
     transform        : translate3d(0%, 0%, 0);  
     transition-delay : 0.6s;
 
@@ -406,7 +406,7 @@ INFO SERVICIOS
 
   .infoservices-descripcion .infoservices-descripcion__img:hover figcaption .descripcion__img{
 
- 	opacity          : 1; 
+ 	  opacity          : 1; 
     transform        : translate3d(0%, 0%, 0);
     transition-delay : 0.4s;
 
@@ -420,3 +420,65 @@ INFO SERVICIOS
     transition-delay : 0s;
 
   }
+
+.table-rwd {
+
+  font-size       : .85em;
+  border          : 4px solid #fefefe;
+  color           : #666;
+  border-collapse : collapse;  
+  margin-bottom   : 2rem;
+
+}
+
+.table-rwd td, .table-rwd th {
+
+	padding       : .8em;
+	border-bottom : 1px solid #fefefe;
+
+}	
+
+.table-rwd th {
+
+	background  : #6FBBB1;
+	color       : #fff;
+	font-weight : normal;
+	text-align  : center;
+	font-family : $font-title;
+	font-weight : bold;
+
+}
+
+.table-rwd td {
+
+	text-align  : center; 
+	font-weight : bold;
+	font-family : $font-main;
+
+}
+
+.table-container {
+
+  overflow-x : auto; 
+
+}
+
+.table-rwd {
+
+	min-width : 100%;
+
+ }
+
+ .table-rwd td:first-child {
+
+    position   : absolute;
+    background : #fff;
+    width      : 8em; 
+
+  }
+
+ .table-rwd tr:nth-child(even) {
+
+		background : #E7E9EB; 
+
+}	
