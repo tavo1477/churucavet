@@ -268,8 +268,6 @@ HEADER
 
 #slide ul li img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #slide .flechas {
@@ -831,6 +829,52 @@ INFO SERVICIOS
   opacity: 1;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+
+.table-rwd {
+  font-size: 0.85em;
+  border: 4px solid #fefefe;
+  color: #666;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.table-rwd td, .table-rwd th {
+  padding: 0.8em;
+  border-bottom: 1px solid #fefefe;
+}
+
+.table-rwd th {
+  background: #6FBBB1;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+
+.table-rwd td {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table-rwd {
+  min-width: 100%;
+}
+
+.table-rwd td:first-child {
+  position: absolute;
+  background: #fff;
+  width: 8em;
+}
+
+.table-rwd tr:nth-child(even) {
+  background: #E7E9EB;
 }
 
 /*=============================================
