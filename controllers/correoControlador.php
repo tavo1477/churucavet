@@ -38,10 +38,10 @@ class CorreoControlador{
 				    $mail->isHTML(true); // Set email format to HTML
 				    $mail->Subject = 'Mensaje de la Clínica Veterinaria Churucavet';
 				    $mail->Body    = "Nombre: ".$_POST["nombre"]."\n"."\n".
-									  "Email: ".$_POST["email"]."\n"."\n".
-									  "Teléfono: ".$_POST["telefono"]."\n"."\n".
-									  "Servicio a consultar: ".$_POST["servicios"]."\n"."\n".
-									  "Mensaje: ".$_POST["mensaje"];
+									 "Email: ".$_POST["email"]."\n"."\n".
+									 "Teléfono: ".$_POST["telefono"]."\n"."\n".
+									 "Servicio a consultar: ".$_POST["servicios"]."\n"."\n".
+									 "Mensaje: ".$_POST["mensaje"];
 				    $mail->AltBody = $_POST["mensaje"];
 
 				    $mail->send();
