@@ -11,7 +11,7 @@
 
         <div class="veterinarios-item">
 
-            <i class="fa-regular fa-user"></i>
+            <img src="<?php echo $route ?>views/images/medico-veterinario.jpeg" alt="">
 
             <div class="veterinarios-item__info">
                 
