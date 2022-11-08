@@ -163,80 +163,62 @@ TOP
 HEADER
 =============================================*/
 .main-header {
-  background: #fff;
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.main-header__block {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
 }
-.main-header__block img {
+.main-header .logo img {
   width: 40%;
 }
-.main-header__block .main-nav {
-  position: fixed;
-  height: calc(100vh - 5rem);
-  width: 100vw;
-  background: #fff;
-  top: 100px;
-  right: -100vw;
-  -webkit-transition: right 0.3s;
-  transition: right 0.3s;
-  z-index: var(--z-fixed);
+.main-header .navbar-menu__item {
+  position: relative;
+  float: left;
 }
-@media screen and (min-width: 64em) {
-  .main-header__block .main-nav {
-    position: static;
-    background: transparent;
-    padding: 0;
-    height: auto;
-    width: auto;
-    margin-top: 1rem;
-  }
-}
-.main-header__block .main-nav.show {
-  right: 0;
-}
-.main-header__block .main-nav .main-menu {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 1rem;
-}
-@media screen and (min-width: 64em) {
-  .main-header__block .main-nav .main-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 0;
-  }
-}
-.main-header__block .main-nav .main-menu__item {
-  padding: 0.8rem;
-  font-size: 1.375rem;
-  text-align: left;
-}
-@media screen and (min-width: 64em) {
-  .main-header__block .main-nav .main-menu__item {
-    font-size: 15px;
-  }
-}
-.main-header__block .main-nav .main-menu__link {
-  color: #524d48;
+.main-header .navbar-menu__item .navbar-menu__link {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  padding: 20px;
+  color: #524d48;
+  display: block;
 }
-.main-header__block .main-nav .main-menu__link:hover {
+.main-header .navbar-menu__item .navbar-menu__link:hover {
   color: #009C89;
   font-weight: bold;
+}
+
+/*=============================================
+SUBMENU
+=============================================*/
+.main-header .navbar ul li ul {
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  display: none;
+  width: 300px;
+}
+
+.main-header .navbar ul li ul li {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.main-header .navbar ul li ul li a {
+  margin: -30px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  display: block;
+}
+.main-header .navbar ul li ul li a:hover {
+  color: #009C89;
+}
+
+.main-header .navbar ul li:hover > ul {
+  display: initial;
 }
 
 #slide {
