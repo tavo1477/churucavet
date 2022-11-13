@@ -5,7 +5,11 @@ HEADER
 <nav>
 		<div class="logo">
 
-			<img src="<?php echo $route?>views/images/logo-churucavet.png" alt="Logo Churucavet">
+			<a href="<?php echo $route?>">
+				
+				<img src="<?php echo $route?>views/images/logo-churucavet.png" alt="Logo Churucavet">
+
+			</a>
 
 		</div>
 
@@ -43,7 +47,7 @@ HEADER
 
 				<div class="dropdown-menu">
 
-					<a class="dropdown-item" href="#">Cuidados PostOperatorios </a>
+					<a class="dropdown-item" href="https://www.mediafire.com/file/2js6vb95z7o18yx/CUIDADOS_POST_OPERATORIOS_CHURUCAVET.pdf/file" target="_blank">Cuidados PostOperatorios </a>
 
 					
 				</div>
