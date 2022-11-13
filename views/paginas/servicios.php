@@ -7,14 +7,14 @@ $servicios = ServicesController::ctrMostrarServicios();
 ?>
 
  <!--=====================================
- HEADER BANNER
+ SERVICES BANNER
  ======================================-->
 
- <div class="about-header">
+ <div class="services-header">
     
-     <div class="about-header__container l-container">
+     <div class="services-header__container l-container">
         
-        <h3 class="about-header__title">Servicios</h3>
+        <h3 class="services-header__title">Servicios</h3>
 
         <ul class="breadcrumb">
 
