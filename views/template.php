@@ -13,14 +13,44 @@ $route = ControllerRoute::ctrRoute();
 	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Churucavet - Clínica veterinaria</title>
+	<title>Clínica veterinaria Churucavet -  Cartago </title>
+	<meta name="title" content="Clínica veterinaria Churucavet en Cartago, Costa Rica">
+	<meta name="description" content="Situados en Cartago, te ofrecemos excelentes servicios para tus mascotas, con un excelente equipo de trabajo, servicio a domicilio, vacunación, conoce más">
+	<meta http-equiv="content-language" content="es">
+	<meta name=”robots” content=”index, follow”>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $route ?>views/images/apple-icon-180x180.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $route ?>views/images/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $route ?>views/images/favicon-16x16.png" />
 
+	<!--=====================================
+	OPENGRAPH FACEBOOK
+	======================================-->
 
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="Clínica veterinaria Churucavet en Cartago, Costa Rica">
+	<meta property="og:url" content="https://www.facebook.com/profile.php?id=100063596321136">
+	<!-- <meta property="og:image" content="http://mediconsultingcr.com/facebook-image.png"> -->	
+	<meta property="og:locale" content="es_CR" />
 
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Veterinario",
+		  "name": "Gustavo Andrés Canales Obando",
+		  "image": "",
+		  "@id": "",
+		  "url": "https://churucavet.com",
+		  "telephone": "8539-8094",
+		  "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "San Rafael",
+		    "addressLocality": "Oreamuno",
+		    "postalCode": "30701",
+		    "addressCountry": "CR"
+		  }  
+		}
+	</script>	
 
 	<!--=====================================
     HOJAS DE ESTILO PERSONALIZADAS
@@ -104,33 +134,12 @@ $route = ControllerRoute::ctrRoute();
 			include "paginas/contacto.php";
 		
 		}
-
+		
 	} else {
 
 		include "paginas/inicio.php";
-	}
 
-	// if (isset($_GET["ruta"])) {
-
-	// 	if ($_GET["ruta"] == "inicio" ||
-	//         $_GET["ruta"] == "acerca-de-la-clinica" ||
-	//         $_GET["ruta"] == "servicios" ||
-	//         $_GET["ruta"] == "promociones" ||	              
-	//         $_GET["ruta"] == "contacto"){
-
-	// 		include "paginas/".$_GET["ruta"].".php";
-
-	// 	} else {
-
-	// 		include "paginas/404.php";
-		
-	// 	}
-
-	// } else {
-
-	// 	include "paginas/inicio.php";
-		
-	// }
+	}	
 
 	/*=============================================
 	Módulos fijos inferiores
@@ -145,6 +154,7 @@ $route = ControllerRoute::ctrRoute();
 	JAVASCRIPT PERSONALIZADO
 	======================================-->
 
+	<script async src="<?php echo $route ?>views/js/menu.js"></script>
 	<script async src="<?php echo $route ?>views/js/slider.js"></script>
 	<script async src="<?php echo $route ?>views/js/conteo-clientes.js"></script>
 	<script async src="<?php echo $route ?>views/js/galeria.js"></script>
