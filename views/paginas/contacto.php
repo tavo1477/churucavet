@@ -2,11 +2,11 @@
  HEADER BANNER
  ======================================-->
 
- <div class="about-header">
+ <div class="contacto-header">
     
-     <div class="about-header__container l-container">
+     <div class="contacto-header__container l-container">
         
-        <h3 class="about-header__title">Contacto</h3>
+        <h3 class="contacto-header__title">Contacto</h3>
 
         <ul class="breadcrumb">
 
