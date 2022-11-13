@@ -2,7 +2,7 @@
 ACERCA DE LA CLÍNICA
 ======================================-->
 
-<div class="about-header">
+<div class="about-header l-section">
 	
 	 <div class="about-header__container l-container">
 	 	
