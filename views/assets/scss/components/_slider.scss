@@ -4,6 +4,7 @@
 	margin   : auto;
 	width    : 100%;	
 	overflow : hidden;
+	margin-top : 4.5rem;
 
 }
 
@@ -97,7 +98,7 @@
 
 #slide ul li .textoSlide h4{
 	
-	padding        : 5px 0;
+	padding        : 5px 65px;
 	font-size      : 1.125rem;
 	font-family    : $font-title;
 	text-align     : left;
@@ -108,15 +109,15 @@
 
 #slide ul li .textoSlide h1{
 	
-	padding     : 5px 0;
-	font-size   : 2.375rem;
+	padding     : 5px 65px;
+	font-size   : 1.5rem;
 	font-family : $font-title;
 	margin      : 0;
-	width       : 80%;
+	
 
 	@include from(lg){
 		
-		font-size : 3.5rem;
+		font-size : 3rem;
 		width     : 70%;
 	}
 
