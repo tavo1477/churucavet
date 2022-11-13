@@ -57,7 +57,7 @@ SERVICIO
 
                         <li class="infoservices-list__item">
                     
-                         <a href="<?php echo $route.$value["ruta"];  ?>"><?php echo $value["servicio"] ?></a>
+                            <a href="<?php echo $route.$value["ruta"];  ?>"><?php echo $value["servicio"] ?></a>
 
                         </li>
 
@@ -71,7 +71,7 @@ SERVICIO
                 
                 <div class="services-promocion__img">
                     
-                    <img src="<?php echo $route ?>views/images/promociones/promocion1.jpg" alt="">
+                    <img src="<?php echo $route ?>views/images/promociones/promocion1.jpg" alt="Promociones">
 
                 </div>
 
@@ -83,7 +83,7 @@ SERVICIO
 
              <div class="infoservices-descripcion__img">
                 
-                <img src="<?php echo $route.$infoServicios[0]["imagen_s"] ?>" alt="">
+                <img src="<?php echo $route.$infoServicios[0]["imagen_s"] ?>" alt="<?php echo $infoServicios[0]["servicio"] ?>">
 
                 <figcaption>
 
