@@ -10,11 +10,11 @@
  HEADER BANNER
  ======================================-->
 
- <div class="about-header">
+ <div class="infoServicios-header">
     
-     <div class="about-header__container l-container">
+     <div class="infoServicios__container l-container">
         
-        <h3 class="about-header__title"><?php echo $value["servicio"] ?></h3>
+        <h3 class="infoServicios__title"><?php echo $value["servicio"] ?></h3>
 
         <ul class="breadcrumb">
 
