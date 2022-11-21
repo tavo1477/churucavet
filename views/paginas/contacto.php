@@ -103,14 +103,14 @@
                     <div class="redes-sociales__block--item">
                         
                         <i class="fa-brands fa-facebook-f"></i>
-                        <a href="https://www.facebook.com/profile.php?id=100063596321136" target="_blank"><span class="block-red">Facebook</span></a>
+                        <a href="https://www.facebook.com/profile.php?id=100063596321136" target="_blank" rel="nofollow"><span class="block-red">Facebook</span></a>
 
                     </div>
 
                     <div class="redes-sociales__block--item">
                         
                         <i class="fa-brands fa-instagram"></i>
-                        <a href="https://www.instagram.com/churucavetclinica_/" target="_blank"><span class="block-red">Instagram</span></a>
+                        <a href="https://www.instagram.com/churucavetclinica_/" target="_blank" rel="nofollow"><span class="block-red">Instagram</span></a>
 
                     </div>
 
