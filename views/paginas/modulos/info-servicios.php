@@ -83,7 +83,7 @@ SERVICIO
 
              <div class="infoservices-descripcion__img">
                 
-                <img src="<?php echo $route.$infoServicios[0]["imagen_s"] ?>" alt="<?php echo $infoServicios[0]["servicio"] ?>">
+                <img src="<?php echo $infoServicios[0]["imagen_s"] ?>" alt="<?php echo $infoServicios[0]["servicio"] ?>">
 
                 <figcaption>
 
@@ -95,7 +95,7 @@ SERVICIO
 
              </div> 
 
-            <?php echo $infoServicios[0]["descripcion_s"]  ?> 
+            <?php echo $infoServicios[0]["descripcion_s"]  ?>
 
                             
             
@@ -105,3 +105,8 @@ SERVICIO
     </main>    
     
  </div>
+
+<!--  RewriteEngine On
+RewriteCond %{HTTP_HOST} churucavet\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://churucavet.com/$1 [R,L] -->
