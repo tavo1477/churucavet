@@ -5,16 +5,22 @@ ACERCA DE
 .about-header{
 
 	
-	background : linear-gradient(90deg, rgba(0,156,137,0.8295693277310925) 4%, 
+	background  : linear-gradient(90deg, rgba(0,156,137,0.8295693277310925) 4%, 
 		                                rgba(0,166,157,1) 48%, rgba(111,187,177,1) 93%, 
 		                                rgba(111,187,177,1) 100%);
-	padding    : 2rem;
+	padding-top : 2rem;
 
 	&__container{
 
 		justify-content : space-between;
 		align-items     : center;
-		margin-top      : 2rem;
+		margin-top      : 4rem;
+
+		@include from(lg){
+
+			margin-top : 0;
+
+		}
 
 
 	}

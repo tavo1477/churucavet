@@ -579,7 +579,7 @@ SERVICIOS
 .services-header {
   background: -webkit-gradient(linear, left top, right top, color-stop(4%, rgba(0, 156, 137, 0.8295693277)), color-stop(48%, rgb(0, 166, 157)), color-stop(93%, rgb(111, 187, 177)), to(rgb(111, 187, 177)));
   background: linear-gradient(90deg, rgba(0, 156, 137, 0.8295693277) 4%, rgb(0, 166, 157) 48%, rgb(111, 187, 177) 93%, rgb(111, 187, 177) 100%);
-  padding: 3rem;
+  padding-top: 2rem;
 }
 .services-header__container {
   -webkit-box-pack: justify;
@@ -588,7 +588,7 @@ SERVICIOS
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 .services-header .services-header__title {
   color: #fff;
@@ -1308,7 +1308,7 @@ ACERCA DE
 .about-header {
   background: -webkit-gradient(linear, left top, right top, color-stop(4%, rgba(0, 156, 137, 0.8295693277)), color-stop(48%, rgb(0, 166, 157)), color-stop(93%, rgb(111, 187, 177)), to(rgb(111, 187, 177)));
   background: linear-gradient(90deg, rgba(0, 156, 137, 0.8295693277) 4%, rgb(0, 166, 157) 48%, rgb(111, 187, 177) 93%, rgb(111, 187, 177) 100%);
-  padding: 2rem;
+  padding-top: 2rem;
 }
 .about-header__container {
   -webkit-box-pack: justify;
@@ -1317,7 +1317,12 @@ ACERCA DE
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 64em) {
+  .about-header__container {
+    margin-top: 0;
+  }
 }
 .about-header .about-header__title {
   color: #fff;
@@ -1712,7 +1717,7 @@ CONTACTO
 .contacto-header {
   background: -webkit-gradient(linear, left top, right top, color-stop(4%, rgba(0, 156, 137, 0.8295693277)), color-stop(48%, rgb(0, 166, 157)), color-stop(93%, rgb(111, 187, 177)), to(rgb(111, 187, 177)));
   background: linear-gradient(90deg, rgba(0, 156, 137, 0.8295693277) 4%, rgb(0, 166, 157) 48%, rgb(111, 187, 177) 93%, rgb(111, 187, 177) 100%);
-  padding: 3rem;
+  padding-top: 2rem;
 }
 .contacto-header__container {
   -webkit-box-pack: justify;
@@ -1735,7 +1740,7 @@ CONTACTO
   }
 }
 .contacto-header .breadcrumb {
-  margin-top: -5px;
+  margin-top: -25px;
 }
 .contacto-header .breadcrumb li {
   display: inline;
