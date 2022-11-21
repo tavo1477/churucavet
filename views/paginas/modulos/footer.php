@@ -41,7 +41,7 @@ FOOTER
                  
                   <span class="redes-item">
 
-                    <a href="https://www.facebook.com/profile.php?id=100063596321136" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100063596321136" target="_blank" rel="nofollow">
 
                       <i class="fa-brands fa-facebook-f"></i>
 
@@ -51,7 +51,7 @@ FOOTER
 
                   <span class="redes-item">
 
-                    <a href="https://www.instagram.com/churucavetclinica_/" target="_blank">
+                    <a href="https://www.instagram.com/churucavetclinica_/" target="_blank" rel="nofollow">
 
                       <i class="fa-brands fa-instagram"></i>
 
@@ -76,6 +76,6 @@ FOOTER
 
 <div class="second-footer">
 
-    <p class="second-footer__copyright center-content">Churucavet - Clínica veterinaria y Hotel | Todos los derechos reservados © 2022 | Diseñado y desarrollado por Gustavo Solórzano Tinoco</p>    
+    <p class="second-footer__copyright center-content">Churucavet - Clínica veterinaria | Todos los derechos reservados © 2022 | Diseñado y desarrollado por Gustavo Solórzano Tinoco</p>    
 
 </div>
