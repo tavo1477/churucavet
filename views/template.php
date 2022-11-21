@@ -13,10 +13,16 @@ $route = ControllerRoute::ctrRoute();
 	<meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Clínica veterinaria Churucavet -  Cartago </title>
-	<meta name="title" content="Clínica veterinaria Churucavet en Cartago, Costa Rica">
-	<meta name="description" content="Situados en Cartago, te ofrecemos excelentes servicios para tus mascotas, con un excelente equipo de trabajo, servicio a domicilio, vacunación, conoce más">
+	<title>Clínica Veterinaria Churucavet | San Rafael Oreamuno Cartago </title>
+
+	<meta name="title" content="Clínica Veterinaria Churucavet | San Rafael Oreamuno Cartago">
+
+	<meta name="description" content="Estamos ubicados en San Rafael de Oreamuno, Cartago, te ofrecemos servicios para el cuidado de tu mascota, con un excelente equipo de trabajo, conoce más.">
+
+	<meta name="keywords" content="Clínica Veterinaria Churucavet, San Rafael Oreamuno Cartago, servicios veterinarios, vacunación, peluqueria, Servicio a domicilio, Cirugías, OxigenoTerapia">
+
 	<meta http-equiv="content-language" content="es">
+
 	<meta name=”robots” content=”index, follow”>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $route ?>views/images/apple-icon-180x180.png" />
@@ -37,7 +43,7 @@ $route = ControllerRoute::ctrRoute();
 		{
 		  "@context": "https://schema.org",
 		  "@type": "Veterinario",
-		  "name": "Gustavo Andrés Canales Obando",
+		  "name": "Dr. Gustavo Andrés Canales Obando",
 		  "image": "",
 		  "@id": "",
 		  "url": "https://churucavet.com",
