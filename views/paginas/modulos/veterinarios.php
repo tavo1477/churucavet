@@ -20,7 +20,7 @@
 
             <div class="veterinarios-item__info">
                 
-               <a href="#">
+               <a href="dr-gustavo-canales">
 
                      <h3 class="veterinario-nombre">Dr. Gustavo Andrès Canales Obando</h3>
 
@@ -43,7 +43,7 @@
 
             <div class="veterinarios-item__info" style="margin-top : .5rem;">
                 
-               <a href="#">
+               <a href="osdranick-ramirez-groomista">
 
                     <h3 class="veterinario-nombre">Osdranick Ramirez</h3>
 
