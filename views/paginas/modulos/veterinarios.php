@@ -7,15 +7,25 @@
     <h3 class="veterinarios-subtitle center-content">Especialistas</h3>
     <h2 class="veterinarios-title center-content">Nuestros equipo</h2>
 
+
+    <div class="imagen-equipo center-content">
+
+        <img src="<?php echo $route ?>views/images/equipo.jpg" alt="Foto equipo">
+
+    </div>
+
     <div class="veterinarios-container l-container">
 
-        <div class="veterinarios-item">
-
-            <img src="<?php echo $route ?>views/images/medico-veterinario.jpeg" alt="">
+        <div class="veterinarios-item">            
 
             <div class="veterinarios-item__info">
                 
-               <h3 class="veterinario-nombre">Dr. Gustavo Andrès Canales Obando</h3>
+               <a href="#">
+
+                     <h3 class="veterinario-nombre">Dr. Gustavo Andrès Canales Obando</h3>
+
+                </a>
+
                <h4 class="veterinario-especialista">Médico y Cirujano en medicina veterinaria</h4> 
 
                <p class="veterinarios-text">
@@ -29,13 +39,16 @@
 
         </div> 
 
-        <div class="veterinarios-item">
+        <div class="veterinarios-item">            
 
-            <img src="<?php echo $route ?>views/images/groomista.jpg" alt="">
-
-            <div class="veterinarios-item__info" style="margin-top : .8rem;">
+            <div class="veterinarios-item__info" style="margin-top : .5rem;">
                 
-               <h3 class="veterinario-nombre">Sr. Osdranick Ramirez</h3>
+               <a href="#">
+
+                    <h3 class="veterinario-nombre">Osdranick Ramirez</h3>
+
+               </a>
+
                <h4 class="veterinario-especialista">Asistente y groomista</h4> 
 
                <p class="veterinarios-text">
