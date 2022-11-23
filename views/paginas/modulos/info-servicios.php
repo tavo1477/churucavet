@@ -95,9 +95,7 @@ SERVICIO
 
              </div> 
 
-            <?php echo $infoServicios[0]["descripcion_s"]  ?>
-
-                            
+            <?php echo $infoServicios[0]["descripcion_s"]  ?>                           
             
 
         </section>
