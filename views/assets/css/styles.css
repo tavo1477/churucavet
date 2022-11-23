@@ -524,6 +524,11 @@ BIENVENIDA
 /*=============================================
 PROMOCIONES
 =============================================*/
+.promociones-title {
+  font-size: var(--h2--font-size);
+  font-family: "Roboto Slab", serif;
+  color: #524d48;
+}
 .promociones-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1254,6 +1259,21 @@ VETERINARIOS
   margin: 0;
 }
 
+.imagen-equipo {
+  padding-top: 2rem;
+}
+.imagen-equipo img {
+  width: 80%;
+  height: 410px;
+  border-radius: 7px;
+}
+@media screen and (min-width: 64em) {
+  .imagen-equipo img {
+    width: 25%;
+    height: 410px;
+  }
+}
+
 .veterinarios-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1268,10 +1288,6 @@ VETERINARIOS
   margin-bottom: 1.5rem;
   padding: 2rem;
   width: 100%;
-}
-.veterinarios-container .veterinarios-item img {
-  width: 55%;
-  border-radius: 7px;
 }
 @media screen and (min-width: 64em) {
   .veterinarios-container .veterinarios-item {
@@ -1300,6 +1316,88 @@ VETERINARIOS
 .veterinarios-container i {
   font-size: 5rem;
   font-weight: normal;
+}
+
+/*=============================================
+INFORMACIÓN DEL EQUIPO
+=============================================*/
+.equipo-app {
+  background: #fff;
+  margin-top: 7rem;
+}
+.equipo-app .equipo-main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 64em) {
+  .equipo-app .equipo-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.equipo-app .equipo-main .equipo-aside {
+  padding: 2rem;
+}
+@media screen and (min-width: 64em) {
+  .equipo-app .equipo-main .equipo-aside {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+.equipo-app .equipo-main .equipo-aside__info {
+  background: #F2F2EB;
+  padding: 2rem;
+}
+.equipo-app .equipo-main .equipo-aside__info--name {
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+}
+.equipo-app .equipo-main .equipo-aside__info--code {
+  text-align: center;
+  padding-top: 0.2rem;
+  font-family: "Raleway", sans-serif;
+}
+.equipo-app .equipo-main .equipo-aside__info--desc {
+  font-family: "Raleway", sans-serif;
+}
+.equipo-app .equipo-main .equipo-aside__info--desc span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.equipo-app .equipo-main .equipo-aside__info--desc p {
+  padding-top: 1rem;
+  font-size: var(--body-font-size);
+}
+.equipo-app .equipo-main .equipo-info {
+  padding: 2rem;
+}
+@media screen and (min-width: 64em) {
+  .equipo-app .equipo-main .equipo-info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+.equipo-app .equipo-main .equipo-info__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+}
+.equipo-app .equipo-main .equipo-info__list {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.equipo-app .equipo-main .equipo-info__list .equipo-info--item {
+  margin-bottom: 1rem;
+}
+.equipo-app .equipo-main .equipo-info__list .equipo-info--item i {
+  font-size: 10px;
 }
 
 /*=============================================
