@@ -135,6 +135,18 @@ $route = ControllerRoute::ctrRoute();
 		
 		}		
 
+		if($_GET["ruta"] == "dr-gustavo-canales"){
+
+			include "paginas/dr-gustavo-canales.php";
+		
+		}
+
+		if($_GET["ruta"] == "osdranick-ramirez-groomista"){
+
+			include "paginas/osdranick-ramirez-groomista.php";
+		
+		}
+
 		if($_GET["ruta"] == "contacto"){
 
 			include "paginas/contacto.php";
