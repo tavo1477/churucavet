@@ -26,6 +26,27 @@ VETERINARIOS
 
 }
 
+.imagen-equipo{
+
+	padding-top: 2rem;	
+
+	img{
+
+		width         : 80%;
+		height        : 410px;
+		border-radius : 7px;
+
+		@include from(lg){
+
+			width  : 25%;
+			height : 410px;
+
+		}
+
+	}
+
+}
+
 .veterinarios-container{
 
 	flex-wrap       : wrap;
@@ -38,14 +59,7 @@ VETERINARIOS
 
 		margin-bottom : 1.5rem;		
 		padding       : 2rem;
-		width         : 100%;
-
-		img{
-
-			width: 55%;
-			border-radius : 7px;
-
-		}
+		width         : 100%;		
 
 		@include from(lg){
 
@@ -96,4 +110,119 @@ VETERINARIOS
 
 }
 
+/*=============================================
+INFORMACIÓN DEL EQUIPO
+=============================================*/
 
+.equipo-app{
+
+	background  : #fff;
+	margin-top : 7rem;
+
+	.equipo-main{
+
+		flex-direction : column;
+
+		@include from(lg){
+
+			flex-direction : row;
+
+		}
+
+		.equipo-aside{
+
+			padding : 2rem;
+
+			
+
+			@include from(lg){
+
+				flex : 1 0 50%;
+
+			}
+
+			&__info{
+
+				background : #F2F2EB;
+				padding    : 2rem;
+
+				&--name{
+
+					font-size   : 25px;
+					font-family : $font-title;
+					margin      : 0; 
+
+				}
+
+				&--code{
+
+					text-align   : center;
+					padding-top  : .2rem;
+					font-family : $font-main;
+
+				}
+
+				&--desc{
+
+					font-family : $font-main;
+
+					span{
+
+						font-size   : 18px;	
+						font-weight : bold;					
+
+					}
+
+					p{
+
+						padding-top : 1rem;
+						font-size   : var(--body-font-size);
+
+					}
+				}
+
+			}
+
+		}
+
+		.equipo-info{
+
+			padding : 2rem;
+
+			@include from(lg){
+
+				flex : 1 0 50%;
+
+			}
+
+			&__title{
+
+				font-family : $font-title;
+				font-size   : 22px;
+
+			}
+
+			&__list{
+				
+				font-family : $font-main;
+				margin      : 0;
+				padding     : 0; 
+
+				.equipo-info--item{
+
+					margin-bottom : 1rem;
+
+					i{
+
+						font-size : 10px;
+
+					}
+
+				}
+
+			}
+		}
+
+	}
+
+}
