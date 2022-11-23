@@ -3,6 +3,8 @@ PROMOCIONES
 ======================================-->
 
 <div class="promociones l-section">
+
+	<h2 class="promociones-title center-content">Promociones</h2>
 	
 	<div class="promociones-container l-container">
 		
