@@ -4,6 +4,13 @@ PROMOCIONES
 
 .promociones {
 
+	&-title{
+
+		font-size   : var(--h2--font-size);
+		font-family : $font-title;
+		color       : #524d48;
+	}
+
 	&-container{
 
 		flex-wrap: wrap;
