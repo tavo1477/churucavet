@@ -1153,6 +1153,66 @@ CLIENTES
 /*=============================================
 GALERÍA
 =============================================*/
+.galeria-header {
+  background: -webkit-gradient(linear, left top, right top, color-stop(4%, rgba(0, 156, 137, 0.8295693277)), color-stop(48%, rgb(0, 166, 157)), color-stop(93%, rgb(111, 187, 177)), to(rgb(111, 187, 177)));
+  background: linear-gradient(90deg, rgba(0, 156, 137, 0.8295693277) 4%, rgb(0, 166, 157) 48%, rgb(111, 187, 177) 93%, rgb(111, 187, 177) 100%);
+  padding-top: 4rem;
+}
+.galeria-header__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+.galeria-header .galeria-header__title {
+  color: #fff;
+  font-size: var(--body-font-size);
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+@media screen and (min-width: 64em) {
+  .galeria-header .galeria-header__title {
+    font-size: var(--h3-font-size);
+  }
+}
+.galeria-header .breadcrumb {
+  margin-top: -5px;
+}
+.galeria-header .breadcrumb li {
+  display: inline;
+  font-size: var(--small-font-size);
+  text-transform: none;
+  font-family: "Raleway", sans-serif;
+}
+@media screen and (min-width: 64em) {
+  .galeria-header .breadcrumb li {
+    text-transform: uppercase;
+  }
+}
+.galeria-header .breadcrumb li + li:before {
+  padding: 5px;
+  color: black;
+  content: " ";
+}
+.galeria-header .breadcrumb li a {
+  color: #fff;
+  text-transform: none;
+  font-size: var(--small-font-size);
+  font-family: "Raleway", sans-serif;
+}
+@media screen and (min-width: 64em) {
+  .galeria-header .breadcrumb li a {
+    text-transform: uppercase;
+  }
+}
+.galeria-header .breadcrumb li a:hover {
+  color: #74698D;
+  font-weight: bold;
+}
+
 .galeria {
   background: #fff;
   padding-top: 2rem;
@@ -1161,6 +1221,18 @@ GALERÍA
 .galeria-title {
   font-size: var(--h2--font-size);
   font-family: "Roboto Slab", serif;
+}
+
+.galeria-title {
+  font-size: var(--h2-font-size);
+  font-family: "Roboto Slab", serif;
+  color: #524d48;
+  padding-top: 2rem;
+}
+@media screen and (min-width: 64em) {
+  .galeria-title {
+    font-size: var(--h2--font-size);
+  }
 }
 
 .galeria-container {
