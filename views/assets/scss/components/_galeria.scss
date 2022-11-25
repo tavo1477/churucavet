@@ -2,6 +2,91 @@
 GALERÍA
 =============================================*/
 
+.galeria-header{
+
+	
+	background  : linear-gradient(90deg, rgba(0,156,137,0.8295693277310925) 4%, 
+		                                rgba(0,166,157,1) 48%, rgba(111,187,177,1) 93%, 
+		                                rgba(111,187,177,1) 100%);
+	padding-top :  4rem;
+
+	&__container{
+
+		justify-content : space-between;
+		align-items     : center;
+		margin-top      : 4rem;
+
+
+	}
+
+	.galeria-header__title{
+
+		color       : #fff;
+		font-size   : var(--body-font-size );
+		font-family : $font-main;
+		font-weight : 500;
+
+		@include from(lg){
+
+			font-size   : var(--h3-font-size);
+
+		}
+
+	}
+
+	.breadcrumb {
+
+  		margin-top: -5px;
+
+  		li {
+
+		  display        : inline;
+		  font-size      : var( --small-font-size);
+		  text-transform : none;
+		  font-family    : $font-main;
+
+		  @include from(lg){
+
+			 	 text-transform : uppercase;
+
+			}
+
+		  &+li:before {
+
+			  padding : 5px;
+			  color   : black;
+			  content : "\00a0";
+
+		  }
+
+		  a {
+
+			  color          : #fff;
+			  text-transform : none;
+			  font-size      : var( --small-font-size);
+			  font-family    : $font-main;
+
+			  @include from(lg){
+
+			  	 text-transform : uppercase;
+
+			  }
+
+			  &:hover {
+
+				  color       : #74698D;
+				  font-weight : bold;
+				 
+				}
+
+			}
+
+ 		} 		
+
+	}
+
+}
+
 .galeria{
 
 	background : #fff;
@@ -16,6 +101,20 @@ GALERÍA
 
 	}
 
+}
+
+.galeria-title{
+
+	font-size   : var(--h2-font-size);
+	font-family : $font-title;
+	color       : #524d48;
+	padding-top : 2rem;
+
+	@include from(lg){
+
+		font-size : var(--h2--font-size);
+
+	}
 }	
 
 .galeria-container{
