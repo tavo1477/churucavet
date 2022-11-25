@@ -1165,79 +1165,38 @@ GALERÍA
 
 .galeria-container {
   background: #fff;
-  padding-top: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 2rem;
 }
-
-.galeria-enlaces__block {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.galeria-enlaces__block li {
-  margin-right: 15px;
-  padding: 10px;
-  border: 1px solid #FDD9C4;
-  color: #F8986B;
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.13);
-          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.13);
-  cursor: pointer;
-  font-family: "Roboto Slab", serif;
-  font-size: var(--small-font-size);
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-.galeria-enlaces__block li.active {
-  background: #F8986B;
-  color: #fff;
-  border: 1px solid #F15623;
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.13);
-          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.13);
-}
-
-.galeria-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.galeria-images .cont-images {
-  width: 100%;
-  margin-bottom: 1rem;
-  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  height: 200px;
+.galeria-container .galeria-item {
+  width: calc(50% - 2em);
+  margin: 1em;
   overflow: hidden;
+  border: 1px solid #009C89;
+  border-radius: 7px;
+  cursor: pointer;
 }
 @media screen and (min-width: 64em) {
-  .galeria-images .cont-images {
-    width: calc(25% - 1rem);
-    margin: 0.5rem;
+  .galeria-container .galeria-item {
+    width: calc(25% - 2em);
+    margin: 1em;
   }
 }
-.galeria-images .cont-images .img-gal {
+.galeria-container .galeria-item img {
   width: 100%;
-  height: 100%;
-}
-.galeria-images .cont-images .img-gal img {
-  height: 100%;
-  width: 100%;
+  height: 291px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 7px;
   display: block;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
-.galeria-images .cont-images .img-gal img:hover {
-  -webkit-transform: scale(1.1) translateY(-10px);
-          transform: scale(1.1) translateY(-10px);
-  opacity: 0.5;
+.galeria-container .galeria-item:hover img {
+  -webkit-transform: scale(1.3) rotate(-5deg);
+          transform: scale(1.3) rotate(-5deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 /*=============================================
