@@ -76,6 +76,87 @@
 
          </a>          
 
-    </div> 
+    </div>
+
+     <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia3.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/cirugia3.jpg" alt="Cirugías">
+
+         </a>          
+
+    </div>
+
+    <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia4.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/cirugia4.jpg" alt="Cirugías">
+
+         </a>          
+
+    </div>
+
+    <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia5.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/cirugia5.jpg" alt="Cirugías">
+
+         </a>          
+
+    </div>
+
+    <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia6.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/cirugia6.jpg" alt="Cirugías">
+
+         </a>          
+
+    </div>
+
+    <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia7.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/cirugia7.jpg" alt="Cirugías">
+
+         </a>          
+
+    </div>
+
+    <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia8.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/cirugia8.jpg" alt="Cirugías">
+
+         </a>          
+
+    </div>
+
+    <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia9.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/grooming3.jpg" alt="Cirugías">
+
+         </a>          
+
+    </div>
+
+    <div class="galeria-item img-gal">
+
+         <a data-fancybox="gallery" href="<?php echo $route ?>views/images/galeria/cirugia9.jpg">
+             
+              <img src="<?php echo $route ?>views/images/galeria/grooming3.jpg" alt="Grooming">
+
+         </a>          
+
+    </div>
+
 
  </div>
