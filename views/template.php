@@ -129,6 +129,12 @@ $route = ControllerRoute::ctrRoute();
 
 		}
 
+		if ($_GET["ruta"] == "galeria") {
+			
+			include "paginas/galeria.php";
+
+		}
+
 		if($_GET["ruta"] == "servicios"){
 
 			include "paginas/servicios.php";
