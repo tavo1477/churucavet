@@ -37,6 +37,12 @@ HEADER
 
 			<li class="nav-item">
 
+				<a href="galeria">Galería</a>
+
+			</li>
+
+			<li class="nav-item">
+
 				<a href="servicios">Servicios</a>
 
 			</li>
